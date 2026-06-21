@@ -18,8 +18,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY app/ ./app/
 
-# Create data directory and ensure proper permissions
-RUN mkdir -p /app/data && chown -R appuser:appgroup /app
+# Copy initial data
+COPY data/ ./data/
+
+# Ensure proper permissions
+RUN chown -R appuser:appgroup /app
 
 # Switch to non-root user
 USER appuser
