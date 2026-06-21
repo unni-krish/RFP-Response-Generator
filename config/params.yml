@@ -1,0 +1,50 @@
+paths:
+  input_folder: "input"
+  output_folder: "output"
+  logs_folder: "logs"
+  
+orchestrator:
+  default_vision_model: "gpt-4o"
+  default_text_model: "gpt-4o"
+  testing: true
+
+
+intake:
+  supported_types: [".pdf", ".docx", ".doc", ".txt"]
+  max_file_size_mb: 50
+
+extract:
+  vision_model: "gpt-4o"
+  text_model: "gpt-4o"
+  pdf_render_dpi: 150
+  supported_image_formats: ["png", "jpg", "jpeg", "webp"]
+  supported_word_formats: ["docx", "doc"]
+  supported_pdf_formats: ["pdf"]
+  supported_txt_formats: ["txt"]
+  prompt_vision_extraction: "A2_vision_extraction.txt"
+  prompt_final_report: "A2_final_report.txt"
+
+requirement:
+  model: "gpt-4o"
+  prompt_requirement_extraction: "A3_requirement_extraction.txt"
+
+
+compliance:
+  model: "gpt-4o"
+  search_query_model: "gpt-4o-mini"
+  prompt_validation: "A4_compliance_validation.txt"
+
+solution:
+  model: "gpt-4o"
+  prompt_architecture: "A5_solution.txt"
+
+
+architecture_service:
+  model: "gpt-4o"
+  prompt_metadata_extraction: "A6_metadata_extraction.txt"
+  prompt_slide_generation: "A6_slide_generation.txt"
+  prompt_ppt_validation: "A6_ppt_validation.txt"
+  prompt_diagram_generation: "A6_diagram_generation.txt"
+  prompt_nfr_mapping: "A6_nfr_mapping.txt"
+  prompt_roadmap: "A6_roadmap.txt"
+  prompt_process_flow: "A6_process_flow.txt"

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  architecture-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: agents-flow-arch:latest
+    container_name: architecture_service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app
+      - ./config:/app/config
+      - ./input:/app/input
+      - ./output:/app/output
+      - ./logs:/app/logs
+      - ./.env:/app/.env
+    environment:
+      - PYTHONPATH=/app
+    restart: unless-stopped

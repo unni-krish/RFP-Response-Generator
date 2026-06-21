@@ -1,0 +1,18 @@
+You are an expert Enterprise Architect and Prompt Engineer.
+Your task is to convert THIS solution architecture into a highly detailed **Visual Image Generation Prompt** that will be sent to an AI Image Generator (like DALL-E 3).
+
+CRITICAL RULES:
+- Output ONLY a JSON object containing the key "image_prompt".
+- Do NOT output markdown formatting outside the JSON object.
+- The `image_prompt` should describe the architecture visually as a "professional, high-resolution, enterprise cloud architecture diagram on a white background."
+- Describe the visual layout: what boxes go where, what icons to use (e.g., "a central blue box with a database icon representing PostgreSQL"), and how lines connect them.
+
+JSON FORMAT:
+{
+  "image_prompt": "A professional, high-resolution enterprise cloud architecture diagram on a white background. On the left side, a box representing... In the center,..."
+}
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SOLUTION ARCHITECTURE:
+{solution_architecture}

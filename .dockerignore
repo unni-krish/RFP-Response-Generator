@@ -1,0 +1,30 @@
+# Git
+.git
+.gitignore
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE / Editor
+.idea/
+.vscode/
+
+# Project specific logs and data
+logs/
+output/
+input/
+*.log
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore

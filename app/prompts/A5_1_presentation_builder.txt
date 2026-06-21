@@ -1,0 +1,91 @@
+You are an expert Enterprise Solution Architect. Your task is to analyze the provided Solution Architecture report and generate a DETAILED 5-slide presentation JSON tailored specifically to this project.
+
+CRITICAL RULES:
+- Output ONLY a single JSON object. No markdown fences, no explanation outside the JSON.
+- Every slide must contain SPECIFIC information extracted from the solution report — NOT generic filler.
+
+═══════════════════════════════════════════════════════════════════════════════
+REQUIRED JSON STRUCTURE
+═══════════════════════════════════════════════════════════════════════════════
+
+{{
+  "presentation": {{
+    "title": "Infer the project name from the solution report",
+    "client": "Infer the client/organization name from the solution report",
+    "date": "Month Year (infer or use current)",
+    "slides": [
+      {{
+        "slide_number": 1,
+        "title": "Title Slide",
+        "type": "title_slide",
+        "content": {{
+          "project_title": "A clear, descriptive project title inferred from the solution",
+          "client_name": "The full client organization name",
+          "subtitle": "Solution Architecture & Technical Proposal",
+          "date": "Month Year"
+        }}
+      }},
+      {{
+        "slide_number": 2,
+        "title": "Problem & Objectives",
+        "type": "text_bullets",
+        "content": {{
+          "bullets": [
+            "CURRENT CHALLENGES",
+            "- Challenge 1 specific to this project",
+            "- Challenge 2 specific to this project",
+            "- Challenge 3 specific to this project",
+            "STRATEGIC OBJECTIVES",
+            "- Objective 1 with measurable outcome",
+            "- Objective 2 tied to business value",
+            "- Objective 3 addressing compliance/efficiency",
+            "EXPECTED OUTCOMES",
+            "- Outcome 1 with quantifiable benefit",
+            "- Outcome 2 describing operational improvement"
+          ]
+        }}
+      }},
+      {{
+        "slide_number": 3,
+        "title": "Solution Architecture Overview",
+        "type": "architecture_diagram",
+        "content": {{
+          "caption": "Write a 1-2 sentence description of the architecture diagram"
+        }}
+      }},
+      {{
+        "slide_number": 4,
+        "title": "Component & Technology Stack",
+        "type": "table",
+        "content": {{
+          "headers": ["Layer", "Key Components", "Technology Choices", "Purpose"],
+          "rows": [
+            "Generate 5-8 rows based on ACTUAL layers mentioned in the solution report.",
+            "Only include layers that are relevant to THIS project.",
+            "Use the exact technologies mentioned in the solution report."
+          ]
+        }}
+      }},
+      {{
+        "slide_number": 5,
+        "title": "Deployment & Security",
+        "type": "component_detail",
+        "content": {{
+          "description": "Summarize the deployment and security approach from the solution report",
+          "components": [
+            "Generate 4-6 component cards based on what the solution report actually describes.",
+            "Each card: {{\"name\": \"...\", \"description\": \"...\", \"layer\": \"...\"}}"
+          ],
+          "benefits": [
+            "Generate 4-6 key benefits/highlights extracted from the solution report"
+          ]
+        }}
+      }}
+    ]
+  }}
+}}
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SOLUTION ARCHITECTURE:
+{solution_architecture}
