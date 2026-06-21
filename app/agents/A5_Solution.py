@@ -37,6 +37,7 @@ class A5SolutionAgent:
         try:
             response = requests.get(f"{BASE_URL}/tables/tech_stack")
             response.raise_for_status()
+            logger.info("Technology Stack Loaded Successfully from API")
             return response.text
         except Exception as e:
             logger.error(f"Failed to fetch tech stack from API: {e}")

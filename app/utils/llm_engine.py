@@ -92,16 +92,6 @@ def invoke(prompt: str | list, model: str = None) -> str:
         logger.error(e)
         raise
 
-    # Set fallback model
-    if primary_name == "GPT":
-        fallback_model_name = DEFAULT_CLAUDE_MODEL
-        fallback_name = "Claude"
-    else:
-        fallback_model_name = DEFAULT_GPT_MODEL
-        fallback_name = "GPT"
-
-    fallback_model, _ = get_model_instance(fallback_model_name)
-
     messages = [HumanMessage(content=prompt)]
 
     # Try Primary
@@ -110,15 +100,24 @@ def invoke(prompt: str | list, model: str = None) -> str:
         response = primary_model.invoke(messages)
         return response.content
     except Exception as e:
+        # Determine fallback model
+        if primary_name == "GPT":
+            fallback_model_name = DEFAULT_CLAUDE_MODEL
+            fallback_name = "Claude"
+        else:
+            fallback_model_name = DEFAULT_GPT_MODEL
+            fallback_name = "GPT"
+            
         logger.warning(f"{primary_name} failed: {e}. Falling back to {fallback_name}...")
 
-    # Try Fallback
-    try:
-        response = fallback_model.invoke(messages)
-        return response.content
-    except Exception as e:
-        logger.error(f"Both providers failed: {e}")
-        raise
+        # Try Fallback
+        try:
+            fallback_model, _ = get_model_instance(fallback_model_name)
+            response = fallback_model.invoke(messages)
+            return response.content
+        except Exception as fallback_e:
+            logger.error(f"Both providers failed. Primary error: {e}. Fallback error: {fallback_e}")
+            raise
 
 
 # ====================== Example Usage ======================
