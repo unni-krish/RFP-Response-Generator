@@ -41,10 +41,5 @@ solution:
 
 architecture_service:
   model: "gpt-4o"
-  prompt_metadata_extraction: "A6_metadata_extraction.txt"
-  prompt_slide_generation: "A6_slide_generation.txt"
-  prompt_ppt_validation: "A6_ppt_validation.txt"
-  prompt_diagram_generation: "A6_diagram_generation.txt"
-  prompt_nfr_mapping: "A6_nfr_mapping.txt"
-  prompt_roadmap: "A6_roadmap.txt"
-  prompt_process_flow: "A6_process_flow.txt"
+  prompt_presentation_builder: "A5_1_presentation_builder.txt"
+  prompt_diagram_builder: "A5_1_diagram_html_builder.txt"
