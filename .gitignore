@@ -15,6 +15,3 @@ venv.bak/
 # IDEs
 .idea/
 .vscode/
-
-# Data directory
-data/

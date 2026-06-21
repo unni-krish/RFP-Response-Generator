@@ -1,0 +1,212 @@
+{
+    "tables": {
+        "delivery_methodology": [
+            {
+                "methodology": "Agile Scrum",
+                "sprint_duration_weeks": 2,
+                "standard_phases": [
+                    {
+                        "name": "Phase 1: Discovery & Design",
+                        "typical_duration_weeks": "2-4",
+                        "key_deliverables": [
+                            "Architecture Document",
+                            "UI/UX Wireframes",
+                            "Product Backlog"
+                        ]
+                    },
+                    {
+                        "name": "Phase 2: Development & Implementation",
+                        "typical_duration_weeks": "Variable based on scope",
+                        "key_deliverables": [
+                            "Working Software increments",
+                            "Sprint Reviews"
+                        ]
+                    },
+                    {
+                        "name": "Phase 3: QA & UAT",
+                        "typical_duration_weeks": 2,
+                        "key_deliverables": [
+                            "Test Reports",
+                            "UAT Sign-off"
+                        ]
+                    },
+                    {
+                        "name": "Phase 4: Deployment & Go-Live",
+                        "typical_duration_weeks": 1,
+                        "key_deliverables": [
+                            "Deployment Runbook",
+                            "Production Release"
+                        ]
+                    },
+                    {
+                        "name": "Phase 5: Hypercare & Support",
+                        "typical_duration_weeks": "2-4",
+                        "key_deliverables": [
+                            "Support Handover",
+                            "Incident Reports"
+                        ]
+                    }
+                ],
+                "team_structure": [
+                    {
+                        "role": "Product Owner",
+                        "responsibility": "Manages backlog and requirements"
+                    },
+                    {
+                        "role": "Scrum Master",
+                        "responsibility": "Facilitates agile ceremonies and removes blockers"
+                    },
+                    {
+                        "role": "Solution Architect",
+                        "responsibility": "Owns technical design and infrastructure"
+                    },
+                    {
+                        "role": "Development Team",
+                        "responsibility": "Executes coding and implementation"
+                    },
+                    {
+                        "role": "QA Engineer",
+                        "responsibility": "Ensures quality and runs automated/manual tests"
+                    }
+                ]
+            }
+        ],
+        "rate_card": [
+            {
+                "roles": {
+                    "project_manager": {
+                        "daily_rate_usd": 120
+                    },
+                    "solution_architect": {
+                        "daily_rate_usd": 200
+                    },
+                    "senior_developer": {
+                        "daily_rate_usd": 130
+                    },
+                    "junior_developer": {
+                        "daily_rate_usd": 80
+                    },
+                    "qa_engineer": {
+                        "daily_rate_usd": 100
+                    },
+                    "devops_engineer": {
+                        "daily_rate_usd": 140
+                    }
+                },
+                "financial_guidelines": {
+                    "standard_profit_margin_percentage": 20,
+                    "contingency_buffer_percentage": 10,
+                    "software_licensing_markup_percentage": 5
+                }
+            }
+        ],
+        "tech_stack": [
+            {
+                "frontend_technologies": [
+                    "React.js",
+                    "Next.js",
+                    "Angular",
+                    "Vue.js",
+                    "TailwindCSS",
+                    "Material UI"
+                ],
+                "backend_technologies": [
+                    "Node.js (Express, NestJS)",
+                    "Python (FastAPI, Django, Flask)",
+                    "Java (Spring Boot)",
+                    "C# (.NET Core)",
+                    "Go"
+                ],
+                "databases": [
+                    "PostgreSQL",
+                    "MongoDB",
+                    "MySQL",
+                    "Redis",
+                    "Elasticsearch",
+                    "DynamoDB"
+                ],
+                "cloud_platforms": [
+                    "Amazon Web Services (AWS)",
+                    "Microsoft Azure",
+                    "Google Cloud Platform (GCP)"
+                ],
+                "devops_and_cicd": [
+                    "GitHub Actions",
+                    "GitLab CI/CD",
+                    "Jenkins",
+                    "Terraform",
+                    "Docker",
+                    "Kubernetes",
+                    "Ansible"
+                ],
+                "genai_and_llm": [
+                    "OpenAI (GPT-4)",
+                    "Anthropic (Claude)",
+                    "Google (Gemini)",
+                    "Meta (Llama 3)",
+                    "LangChain",
+                    "LlamaIndex",
+                    "HuggingFace"
+                ],
+                "data_engineering": [
+                    "Apache Spark",
+                    "Apache Kafka",
+                    "Airflow",
+                    "Snowflake",
+                    "Databricks",
+                    "dbt"
+                ],
+                "machine_learning_and_ai": [
+                    "PyTorch",
+                    "TensorFlow",
+                    "Scikit-learn",
+                    "OpenCV"
+                ],
+                "rpa_automation_anywhere": [
+                    "Automation Anywhere",
+                    "UiPath",
+                    "Blue Prism"
+                ],
+                "integration_technologies": [
+                    "MuleSoft",
+                    "Apache Camel",
+                    "GraphQL",
+                    "REST APIs",
+                    "gRPC",
+                    "RabbitMQ"
+                ],
+                "hosting_and_infrastructure": [
+                    "Vercel",
+                    "AWS EC2 / ECS / EKS",
+                    "Azure App Service",
+                    "GCP Cloud Run"
+                ],
+                "security_and_compliance": [
+                    "Auth0",
+                    "AWS Cognito",
+                    "SonarQube",
+                    "OWASP ZAP",
+                    "Snyk",
+                    "Vault (HashiCorp)"
+                ],
+                "analytics_and_bi": [
+                    "Power BI",
+                    "Tableau",
+                    "Google Analytics",
+                    "Metabase"
+                ],
+                "industry_domain_expertise": [
+                    "Healthcare (HIPAA compliant architectures)",
+                    "Financial Services (PCI-DSS compliant architectures)",
+                    "E-commerce & Retail",
+                    "Education (EdTech platforms)",
+                    "Logistics and Supply Chain"
+                ]
+            }
+        ]
+    },
+    "files": {
+        "brand_guidelines.txt": "Brand Voice Guidelines for Tecnoprism Proposals\n\n1. Professional and Authoritative: Speak as an industry expert. Use clear, concise language without being overly academic or dry.\n2. Confident and Assured: Emphasize our track record of success. Use active voice (e.g., \"We will implement...\" rather than \"It will be implemented...\").\n3. Client-Centric: Focus on the value and ROI for the client, not just the technical features. Always tie technical choices back to business outcomes.\n4. Modern and Forward-Thinking: Use contemporary terminology (e.g., \"cloud-native\", \"AI-driven\") where appropriate, but avoid empty buzzwords.\n5. Tone: Approachable, collaborative, and highly competent.\n",
+        "company_profile.txt": "Company Profile: Tecnoprism\n\nAbout Us\nTecnoprism is a forward-thinking technology consulting and software development firm dedicated to driving digital transformation. Founded in 2015, we specialize in building scalable, secure, and modern enterprise solutions using cutting-edge cloud native architectures and generative AI.\n\nCore Values\nInnovation First: We leverage the latest technologies to solve complex business problems.\nClient Success: We measure our success by the tangible ROI we deliver to our partners.\nUncompromising Quality: Security, scalability, and performance are built-in, not bolted on.\n\nKey Capabilities\nCloud Architecture & Migration (AWS, Azure, GCP)\nArtificial Intelligence & Machine Learning Integrations\nCustom Enterprise Software Development\nData Engineering & Analytics\nCyber Security & Compliance\n\nPast Performance Highlights\nSuccessfully delivered a modern SaaS platform for a Fortune 500 logistics company, reducing operational overhead by 30%.\nModernized legacy on-premise infrastructure for a major healthcare provider, achieving full HIPAA compliance and zero downtime during migration.\n"
+    }
+}
